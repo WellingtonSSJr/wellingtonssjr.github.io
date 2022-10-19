@@ -1,0 +1,43 @@
+.section-contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 100px;
+    background: #034144;
+    color: #f2fafa;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.disponibilidade{
+    grid-column: 1;
+    max-width: 300px;
+    line-height: 2rem;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.25rem;
+}
+.contatos{
+    grid-column: 2;
+    padding: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.contatos ul > li{
+    padding: 10px;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.contatos ul > li::before{
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 5px;
+    background: white;
+    margin-right: 5px;
+    background: linear-gradient(160deg, #034144, #3bcdd4);
+    border-radius: 2px;
+}
